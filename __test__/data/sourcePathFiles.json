@@ -1,0 +1,4 @@
+{
+  "fileOne": "./__test__/data/src/some-file.js",
+  "fileTwo": "__test__/data/src/some-style.css"
+}

@@ -1,0 +1,47 @@
+{
+  "name": "gulp-copy-vendor",
+  "version": "0.0.2",
+  "description": "Reads a path of dependencies from a file and copies them",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "chai-things": "^0.2.0",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/volkovpv/gulp-copy-vendor"
+  },
+  "keywords": [
+    "gulp",
+    "copy",
+    "vendor"
+  ],
+  "author": {
+    "name": "volkovpv",
+    "url": "https://github.com/volkovpv/gulp-copy-vendor"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovpv/gulp-copy-vendor/issues"
+  },
+  "homepage": "https://github.com/volkovpv/gulp-copy-vendor#readme",
+  "files": [
+    "LICENSE",
+    "index.js",
+    "readme.md"
+  ],
+  "engines": {
+    "node": "*"
+  }
+}
