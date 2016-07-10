@@ -1,6 +1,6 @@
 {
   "name": "gulp-copy-vendor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Reads a path of dependencies from a file and copies them",
   "main": "index.js",
   "dependencies": {
