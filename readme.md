@@ -46,7 +46,7 @@ optionsApp({
     readFile: './src/config.json'
     startPathVendor: 'bower_components/'
     outputPath: 'vendor/'
-    srcPath: 'srcPath/'
+    srcPath: 'src/'
 })
 ```
 
