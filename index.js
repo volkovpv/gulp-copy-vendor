@@ -21,7 +21,9 @@ function gulpCopyVendor(options) {
         startPathVendor: options.startPathVendor || 'vendor/',
         endPathVendor: options.end || '.js',
         rootPath: options.rootPath || '',
-        outputPath: options.outputPath || 'vendor/'
+        outputPath: options.outputPath || 'vendor/',
+        srcPath: options.srcPath || '',
+        distPath: options.distPath || ''
     };
 
     fs.readFile(optionsApp.readFile, optionsApp.encoding, readVendor);
@@ -59,10 +61,15 @@ function gulpCopyVendor(options) {
             console.log("======= no vendor =======");
             return;
         }
-        
+
         fileArr.forEach(function (item, i, arr) {
-            gulp.src(optionsApp.rootPath + item)
-                    .pipe(gulp.dest(optionsApp.rootPath + options.outputPath));
+            arrDirFile      = item.split('\/');
+            len             = arrDirFile.length-1;
+            fileName        = arrDirFile.splice(len);
+            stringDir       = arrDirFile.join('\/');
+
+            gulp.src(optionsApp.rootPath + optionsApp.srcPath + item)
+                .pipe(gulp.dest(optionsApp.rootPath + options.outputPath+stringDir));
         });
     }
 }
